@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO & Page Information -->
+  <title>Vijayalaxmi J A | Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Vijayalaxmi J A — Engineering student & aspiring software engineer specializing in Python, C++, Web Development, and Systems.">
+  <meta name="author" content="Vijayalaxmi J A">
+  <meta name="keywords" content="Vijayalaxmi J A, Software Engineer, Portfolio, Python, C++, Web Developer, Student Portfolio">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:title" content="Vijayalaxmi J A | Software Engineer Portfolio">
+  <meta property="og:description" content="Explore projects, skills, education, and experience of Vijayalaxmi J A.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Editorial Serif (Playfair Display) + Modern Sans (Plus Jakarta Sans, Inter) + Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER SECTION                                                            -->
+  <!-- Semantic header containing brand identifier, nav links & theme toggle    -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      
+      <!-- Brand Logo / Name -->
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Vijayalaxmi J A Home">
+        <span class="logo-code">&lt;</span><span class="logo-name">Vijayalaxmi</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#timeline" class="nav-item">Timeline</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Night Mode Toggle & Mobile Menu -->
+      <div class="header-controls">
+
+        <!-- ===================================================================== -->
+        <!-- PLACEHOLDER: NIGHT MODE TOGGLE                                        -->
+        <!-- Toggles between light mode and dark/night mode with persistent state   -->
+        <!-- ===================================================================== -->
+        <button 
+          id="theme-toggle" 
+          class="theme-toggle-btn" 
+          type="button" 
+          aria-label="Toggle Night Mode" 
+          aria-pressed="false"
+          title="Toggle Dark / Light Mode"
+        >
+          <!-- Sun Icon (Active in Dark Mode) -->
+          <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Active in Light Mode) -->
+          <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" type="button" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                                    -->
+  <!-- Semantic main containing all core portfolio sections                      -->
+  <!-- ========================================================================= -->
+  <main id="main-content" class="site-main">
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: HERO (EDITORIAL + POP-OUT PHOTO + LAYERED CARDS)               -->
+    <!-- High-end magazine layout, 3D pop-out portrait, stacked frosted cards    -->
+    <!-- ======================================================================= -->
+    <section class="section hero-section editorial-hero" id="hero" aria-label="Editorial Introduction">
+      
+      <!-- Subtle Luxury Ambient Glow & Noise Layers -->
+      <div class="editorial-ambient-glow" aria-hidden="true"></div>
+      <div class="editorial-grid-lines" aria-hidden="true"></div>
+
+      <div class="container hero-container editorial-hero-container">
+        
+        <!-- Left Column: Editorial Typography, Kicker, Title & Pull-Quote -->
+        <div class="editorial-content-column">
+          
+          <!-- Editorial Volume Tag -->
+          <div class="editorial-volume-badge">
+            <span class="badge-dot-live"></span>
+            <span class="volume-tag-text">VOL. 01 &bull; 2026 EDITION &bull; SOFTWARE DOSSIER</span>
+          </div>
+
+          <!-- Editorial Headline -->
+          <div class="editorial-headline-wrap">
+            <span class="editorial-kicker">PORTFOLIO OF</span>
+            <h1 class="editorial-hero-title">
+              Vijayalaxmi
+              <span class="editorial-title-italic">J A.</span>
+            </h1>
+            <p class="editorial-hero-tagline">
+              Software Engineer <span class="tagline-dash">&mdash;</span> Architecting Resilient Systems &amp; Modern Digital Interfaces.
+            </p>
+          </div>
+
+          <!-- Editorial Pull-Quote Card -->
+          <div class="editorial-quote-card">
+            <div class="quote-accent-mark">&ldquo;</div>
+            <p class="editorial-quote-text">
+              Engineering software with algorithmic precision, architectural clarity, and uncompromising aesthetic intent.
+            </p>
+          </div>
+
+          <!-- Editorial Action Buttons (Pill and Hairline) -->
+          <div class="editorial-cta-group">
+            <a href="#projects" class="editorial-btn editorial-btn-solid" id="editorial-btn-projects">
+              Explore Selected Works
+              <span class="btn-arrow-icon">&rarr;</span>
+            </a>
+            <a href="#contact" class="editorial-btn editorial-btn-outline" id="editorial-btn-contact">
+              Initiate Inquiries
+              <span class="btn-arrow-icon">&nearr;</span>
+            </a>
+            <a href="mailto:vijayalaxmija8@gmail.com" class="editorial-email-link" id="editorial-direct-email">
+              vijayalaxmija8@gmail.com
+            </a>
+          </div>
+
+          <!-- Editorial Spec & Data Strip -->
+          <div class="editorial-specs-strip">
+            <div class="spec-block">
+              <span class="spec-key">CORE STACK</span>
+              <span class="spec-val">C++, Python, SQL, Web</span>
+            </div>
+            <div class="spec-divider-line"></div>
+            <div class="spec-block">
+              <span class="spec-key">ACADEMICS</span>
+              <span class="spec-val">8.93 CGPA &bull; AIT ECE</span>
+            </div>
+            <div class="spec-divider-line"></div>
+            <div class="spec-block">
+              <span class="spec-key">LOCATION</span>
+              <span class="spec-val">Karnataka, India</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 3D Pop-Out Photo & Layered Cards Stage -->
+        <div class="editorial-visual-column">
+          <div class="layered-cards-stage" id="layered-cards-stage">
+            
+            <!-- LAYER 1: Background Angled Spec Card (Depth Layer) -->
+            <div class="card-layer card-backdrop-angle" aria-hidden="true">
+              <div class="card-backdrop-header">
+                <span class="card-folio-num">№ 2026-AIT</span>
+                <span class="card-folio-vol">ISSUE 01</span>
+              </div>
+              <div class="card-backdrop-body">
+                <div class="card-barcode-lines">
+                  <span class="bar"></span><span class="bar thick"></span><span class="bar"></span>
+                  <span class="bar thick"></span><span class="bar"></span><span class="bar thin"></span>
+                  <span class="bar thick"></span><span class="bar"></span><span class="bar thin"></span>
+                </div>
+                <div class="card-watermark-text">ENGINEERING DOSSIER</div>
+              </div>
+            </div>
+
+            <!-- LAYER 2: Primary Card with 3D Pop-Out Photo Frame -->
+            <div class="card-layer card-primary-showcase" id="card-primary-showcase">
+              
+              <!-- Card Top Editorial Meta -->
+              <div class="card-top-meta">
+                <div class="meta-tag-pill">
+                  <span class="tag-monogram">V</span>
+                  <span>CURATED PROFILE</span>
+                </div>
+                <span class="card-date-badge">EST. 2025</span>
+              </div>
+
+              <!-- ========================================================= -->
+              <!-- 3D POP-OUT PHOTO CONTAINER                                -->
+              <!-- Subject's head and shoulders break outside pedestal frame -->
+              <!-- ========================================================= -->
+              <div class="popout-photo-wrapper">
+                
+                <!-- Architectural Pedestal Arch Backdrop -->
+                <div class="popout-pedestal-backdrop">
+                  <div class="pedestal-halo"></div>
+                  <div class="pedestal-contour-lines"></div>
+                </div>
+
+                <!-- The Pop-Out Image (Breaks outside top edge in 3D perspective) -->
+                <div class="popout-image-cutout">
+                  <img 
+                    src="WhatsApp Image 2026-10-06 at 7.49.44 PM.jpeg" 
+                    alt="Vijayalaxmi J A portrait" 
+                    class="popout-subject-photo" 
+                    id="popout-subject-photo"
+                  >
+                  <!-- 3D Popout Rim Glow Effect -->
+                  <div class="popout-rim-glow" aria-hidden="true"></div>
+                </div>
+
+                <!-- Popout Base Pedestal Rim Line -->
+                <div class="popout-base-rim" aria-hidden="true"></div>
+              </div>
+
+              <!-- Card Base Editorial Caption -->
+              <div class="card-bottom-caption">
+                <div class="caption-identity">
+                  <h3 class="caption-name">Vijayalaxmi J A</h3>
+                  <p class="caption-title">Software Engineer &bull; Electronics &amp; Communication</p>
+                </div>
+                <span class="caption-stamp">&#10022; ACTIVE</span>
+              </div>
+
+            </div>
+
+            <!-- LAYER 3: Floating Academic Distinction Card (Overlapping Bottom Left) -->
+            <div class="card-layer card-float-stat" id="card-float-stat">
+              <div class="stat-highlight-wrap">
+                <span class="stat-figure">8.93</span>
+                <span class="stat-scale">/ 10</span>
+              </div>
+              <div class="stat-text-meta">
+                <span class="stat-headline">ACADEMIC CGPA</span>
+                <span class="stat-subcaption">Top Tier Distinction &bull; AIT</span>
+              </div>
+            </div>
+
+            <!-- LAYER 4: Floating Availability Pill (Overlapping Top Right) -->
+            <div class="card-layer card-float-status" id="card-float-status">
+              <span class="status-pulse-ring"></span>
+              <span class="status-pill-text">OPEN FOR OPPORTUNITIES</span>
+            </div>
+
+            <!-- LAYER 5: Floating Night Mode Theme Switcher Chip (Overlapping Bottom Right) -->
+            <div class="card-layer card-float-theme-chip" id="card-theme-chip">
+              <button 
+                type="button" 
+                class="editorial-theme-toggle-btn" 
+                id="hero-theme-toggle" 
+                aria-label="Toggle Night Edition"
+                title="Toggle between Noir (Night) & Ivory (Day) editorial theme"
+              >
+                <span class="theme-icon-orb" id="hero-theme-icon">&#9790;</span>
+                <span class="theme-text-col">
+                  <span class="theme-label-small">EDITION THEME</span>
+                  <span class="theme-name-bold" id="hero-theme-btn-label">NOIR (NIGHT)</span>
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: ABOUT                                                          -->
+    <!-- Detailed biography, background story, education snapshot, and photo    -->
+    <!-- ======================================================================= -->
+    <section class="section about-section" id="about" aria-label="About Me">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-index">01.</span>
+          <h2 class="section-heading">About Me</h2>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="about-layout">
+          <!-- Biography Text -->
+          <div class="about-text">
+            <p>
+              Hello! I'm Vijayalaxmi, an engineering student at <strong>Adichunchanagiri Institute of Technology</strong> 
+              (B.E. in Electronics and Communication Engineering) with a current CGPA of <strong>8.93</strong>.
+            </p>
+            <p>
+              My interest in software engineering is driven by a passion for solving algorithmic puzzles, 
+              building functional applications, and exploring how computer networks and operating systems function under the hood.
+            </p>
+            <p>
+              I have hands-on experience in <strong>C, C++, Python</strong>, frontend web technologies (HTML, CSS), 
+              relational databases (SQL), and UI/UX prototyping with Figma. I am constantly expanding my technical toolkit 
+              to contribute to impactful software engineering projects.
+            </p>
+
+            <ul class="about-highlights-list">
+              <li>📍 Based in Karnataka, India</li>
+              <li>🗣️ Fluent in English, Kannada, and Hindi</li>
+              <li>💡 Core strength: OOP, DSA, and Problem Solving</li>
+              <li>🌟 Active participant in technical workshops and mock interview trainings</li>
+            </ul>
+          </div>
+
+          <!-- Profile Photo / Media Holder -->
+          <div class="about-image-column">
+            <div class="image-frame">
+              <img 
+                src="WhatsApp Image 2026-10-06 at 7.49.44 PM.jpeg" 
+                alt="Vijayalaxmi J A portrait" 
+                class="profile-portrait"
+                id="profile-portrait"
+              >
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: SKILLS                                                         -->
+    <!-- Categorized breakdown of programming languages, frontend, backend & core-->
+    <!-- ======================================================================= -->
+    <section class="section skills-section" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-index">02.</span>
+          <h2 class="section-heading">Technical Skills</h2>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category: Programming Languages -->
+          <div class="skill-group-card" id="skill-group-programming">
+            <div class="group-header">
+              <span class="group-icon">💻</span>
+              <h3 class="group-title">Programming Languages</h3>
+            </div>
+            <ul class="skill-pills">
+              <li class="pill">C</li>
+              <li class="pill">C++</li>
+              <li class="pill">Python</li>
+            </ul>
+          </div>
+
+          <!-- Category: Frontend & Web Technologies -->
+          <div class="skill-group-card" id="skill-group-web">
+            <div class="group-header">
+              <span class="group-icon">🌐</span>
+              <h3 class="group-title">Frontend &amp; UI</h3>
+            </div>
+            <ul class="skill-pills">
+              <li class="pill">HTML5 (Semantic Markup)</li>
+              <li class="pill">CSS3 / Modern Layouts</li>
+              <li class="pill">Responsive Design</li>
+              <li class="pill">Figma (UI/UX Prototyping)</li>
+            </ul>
+          </div>
+
+          <!-- Category: Backend & Database -->
+          <div class="skill-group-card" id="skill-group-data">
+            <div class="group-header">
+              <span class="group-icon">🗄️</span>
+              <h3 class="group-title">Backend &amp; Databases</h3>
+            </div>
+            <ul class="skill-pills">
+              <li class="pill">Python (Backend scripts)</li>
+              <li class="pill">SQL (Relational databases)</li>
+              <li class="pill">Database Queries</li>
+            </ul>
+          </div>
+
+          <!-- Category: Core Computer Science & Electronics -->
+          <div class="skill-group-card" id="skill-group-core">
+            <div class="group-header">
+              <span class="group-icon">🧠</span>
+              <h3 class="group-title">Core Computer Science</h3>
+            </div>
+            <ul class="skill-pills">
+              <li class="pill">Object-Oriented Programming (OOP)</li>
+              <li class="pill">Data Structures &amp; Algorithms (DSA)</li>
+              <li class="pill">Operating Systems (OS)</li>
+              <li class="pill">Computer Networks</li>
+              <li class="pill">Basic Electronics</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: TIMELINE                                                       -->
+    <!-- Chronological milestones including education, training & achievements   -->
+    <!-- ======================================================================= -->
+    <section class="section timeline-section" id="timeline" aria-label="Education and Journey Timeline">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-index">03.</span>
+          <h2 class="section-heading">Education &amp; Timeline</h2>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="timeline-tree">
+          
+          <!-- Timeline Entry: Education -->
+          <article class="timeline-card" id="timeline-education">
+            <div class="timeline-marker"></div>
+            <div class="timeline-box">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-education">Education</span>
+                <time class="timeline-period">2025 — 2029</time>
+              </div>
+              <h3 class="timeline-role">Bachelor of Engineering (B.E.)</h3>
+              <h4 class="timeline-institution">Adichunchanagiri Institute of Technology</h4>
+              <p class="timeline-desc">
+                Branch: Electronics and Communication Engineering.<br>
+                Current Academic Performance: <strong>CGPA: 8.93</strong>. Focused on computer science core concepts, algorithms, and microelectronics.
+              </p>
+            </div>
+          </article>
+
+          <!-- Timeline Entry: Training & Development -->
+          <article class="timeline-card" id="timeline-training">
+            <div class="timeline-marker"></div>
+            <div class="timeline-box">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-training">Achievement / Training</span>
+                <time class="timeline-period">Technical Training</time>
+              </div>
+              <h3 class="timeline-role">Mock Interviews &amp; Corporate Readiness Training</h3>
+              <h4 class="timeline-institution">Department of ECE</h4>
+              <p class="timeline-desc">
+                Completed intensive 3-day training including technical evaluations and mock interviews. Regularly participated in project presentations and technical events.
+              </p>
+            </div>
+          </article>
+
+          <!-- Timeline Entry: Ongoing Growth -->
+          <article class="timeline-card" id="timeline-growth">
+            <div class="timeline-marker"></div>
+            <div class="timeline-box">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-growth">Ongoing</span>
+                <time class="timeline-period">Present</time>
+              </div>
+              <h3 class="timeline-role">Continuous Learning &amp; Project Building</h3>
+              <h4 class="timeline-institution">Self-Directed &amp; Collaborative Projects</h4>
+              <p class="timeline-desc">
+                Building practical software projects, expanding full-stack skills, and sharpening problem-solving abilities on coding platforms.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: PROJECTS                                                       -->
+    <!-- Showcase cards with project details, tech tags, and links              -->
+    <!-- ======================================================================= -->
+    <section class="section projects-section" id="projects" aria-label="Projects Showcase">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-index">04.</span>
+          <h2 class="section-heading">Featured Projects</h2>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Footsteps Energy Generation System -->
+          <article class="project-item" id="project-footsteps">
+            <div class="project-top">
+              <span class="project-tag-type">Academic Hardware/Software Project</span>
+              <div class="project-actions">
+                <a href="#" class="project-link-icon" aria-label="Source code or details" title="View Details">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Footsteps Energy Generation System</h3>
+            <p class="project-summary">
+              Developed a green-energy harvesting system designed to convert kinetic energy from human footsteps into electrical power using piezoelectric sensors. Contributed to circuit design, assembly, testing, and technical presentation.
+            </p>
+            <ul class="project-tech-list">
+              <li>Piezoelectric Sensors</li>
+              <li>Basic Electronics</li>
+              <li>Circuit Design</li>
+            </ul>
+          </article>
+
+          <!-- Project 2: StudyBuddy Figma Prototype -->
+          <article class="project-item" id="project-studybuddy">
+            <div class="project-top">
+              <span class="project-tag-type">Group Project (5 Members)</span>
+              <div class="project-actions">
+                <a href="#" class="project-link-icon" aria-label="Figma prototype link" title="View Prototype">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">StudyBuddy – UI/UX Prototype</h3>
+            <p class="project-summary">
+              Designed a collaborative platform for students to discover compatible study partners, organize peer study sessions, and share academic notes. Created low- and high-fidelity wireframes and interactive flows in Figma.
+            </p>
+            <ul class="project-tech-list">
+              <li>Figma</li>
+              <li>UI/UX Design</li>
+              <li>User Flows</li>
+              <li>Prototyping</li>
+            </ul>
+          </article>
+
+          <!-- Project 3: Personal Portfolio Website -->
+          <article class="project-item" id="project-portfolio">
+            <div class="project-top">
+              <span class="project-tag-type">Web Development</span>
+              <div class="project-actions">
+                <a href="https://github.com" class="project-link-icon" aria-label="GitHub Repository" title="Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Responsive Engineer Portfolio</h3>
+            <p class="project-summary">
+              Modern personal portfolio website built with semantic HTML5, Vanilla CSS, and JavaScript. Features interactive night mode toggle, accessible navigation, and optimized responsive layouts.
+            </p>
+            <ul class="project-tech-list">
+              <li>Semantic HTML5</li>
+              <li>Vanilla CSS</li>
+              <li>JavaScript</li>
+              <li>Theme Switching</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- SECTION: CONTACT                                                        -->
+    <!-- Contact form placeholder and direct email / professional links           -->
+    <!-- ======================================================================= -->
+    <section class="section contact-section" id="contact" aria-label="Contact Section">
+      <div class="container contact-box">
+        
+        <div class="section-title-wrap text-center">
+          <span class="section-index">05.</span>
+          <h2 class="section-heading">Get In Touch</h2>
+        </div>
+
+        <p class="contact-desc">
+          I am currently looking for software engineering internships and collaborative project opportunities.
+          Whether you have a question or just want to say hi, feel free to drop me a message!
+        </p>
+
+        <!-- Interactive Contact Form Placeholder -->
+        <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! This is a demo form placeholder.');">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="user-name">Your Name</label>
+              <input type="text" id="user-name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-field">
+              <label for="user-email">Your Email</label>
+              <input type="email" id="user-email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="user-subject">Subject</label>
+            <input type="text" id="user-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+          </div>
+          <div class="form-field">
+            <label for="user-message">Message</label>
+            <textarea id="user-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-contact">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Direct Contact Details -->
+        <div class="contact-direct-links">
+          <p>Or reach out directly via:</p>
+          <a href="mailto:vijayalaxmija8@gmail.com" class="contact-email-link" id="email-direct">vijayalaxmija8@gmail.com</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER SECTION                                                            -->
+  <!-- Semantic footer with copyright, credits, and back to top action           -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-content">
+      
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/vijayalaxmi-ja" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="mailto:vijayalaxmija8@gmail.com" class="footer-link">Email</a>
+      </div>
+
+      <p class="footer-tagline">
+        Keep Growing <span class="heart-symbol">♡</span>
+      </p>
+
+      <p class="footer-copyright">
+        Designed &amp; Built by <strong>Vijayalaxmi J A</strong> &bull; &copy; <span id="year-placeholder">2026</span>
+      </p>
+
+      <!-- Back to top action -->
+      <a href="#header" class="footer-top-link" id="back-to-top" aria-label="Back to top of page">
+        ↑ Back to top
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
